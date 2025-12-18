@@ -4,9 +4,17 @@ use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::controller(\App\Http\Controllers\HomeController::class)->group(function () {
+    Route::get('/', 'index')->name('home');
+});
+
+Route::controller(\App\Http\Controllers\BlogController::class)->group(function () {
+    Route::get('/blog/{blog:slug}', 'show')->name('blog.show');
+});
+
+// Route::get('/', function () {
+//     return view('welcome');
+// })->name('home');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

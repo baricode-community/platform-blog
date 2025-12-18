@@ -16,10 +16,14 @@ class BlogFactory extends Factory
      */
     public function definition(): array
     {
+        $title = $this->faker->sentence();
+        
         return [
-            'slug' => $this->faker->unique()->slug(),
-            'title' => $this->faker->sentence(),
-            'content' => $this->faker->paragraphs(3, true),
+            'slug' => str(collect(explode(' ', $title))->slice(0, 5)->implode(' '))->slug(),
+            'title' => $title,
+            'content' => $this->faker->paragraphs(5, true),
+            'created_at' => $this->faker->dateTimeBetween('-30 days', 'now'),
+            'updated_at' => now(),
         ];
     }
 }

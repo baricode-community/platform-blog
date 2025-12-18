@@ -9,6 +9,7 @@ Route::controller(\App\Http\Controllers\HomeController::class)->group(function (
 });
 
 Route::controller(\App\Http\Controllers\BlogController::class)->group(function () {
+    Route::get('/blog/', 'index')->name('blog.index');
     Route::get('/blog/{blog:slug}', 'show')->name('blog.show');
 });
 

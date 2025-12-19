@@ -4,14 +4,13 @@
         <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/80 border-b border-purple-500/20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-16">
-                    <div class="flex items-center gap-2">
-                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-400 via-pink-400 to-cyan-400"></div>
-                        <span class="font-bold text-lg bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">Baricode</span>
-                    </div>
+                    <a href="{{ route('home') }}" class="text-2xl font-bold text-purple-400 hover:text-purple-300 transition">
+                        Baricode Community
+                    </a>
                     <div class="flex gap-6 items-center">
-                        <a href="#" class="text-purple-300 hover:text-purple-200 transition">Blog</a>
-                        <a href="#" class="text-purple-300 hover:text-purple-200 transition">Komunitas</a>
-                        <button class="px-4 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold transition">Join</button>
+                        <a href="{{ route('blog.index') }}" class="text-purple-300 hover:text-purple-200 transition">Blog</a>
+                        <a href="https://chat.whatsapp.com/Fb2ZFMIKDz7JJZyBVpzXws" class="text-purple-300 hover:text-purple-200 transition">Komunitas WhatsApp</a>
+                        <a href="https://app.baricode.org" class="px-4 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold transition">Platform</a>
                     </div>
                 </div>
             </div>
@@ -31,7 +30,7 @@
                 <div class="mb-8">
                     <h1 class="text-5xl md:text-7xl font-bold mb-6">
                         <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
-                            Baricode Community
+                            Komunitas IT untuk Developer Indonesia
                         </span>
                     </h1>
                     <p class="text-xl md:text-2xl text-purple-200 mb-4">
@@ -76,11 +75,8 @@
 
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#features" class="px-8 py-4 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold transition transform hover:scale-105">
+                    <a href="https://app.baricode.org/dashboard" class="px-8 py-4 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold transition transform hover:scale-105">
                         Mulai Sekarang
-                    </a>
-                    <a href="#" class="px-8 py-4 rounded-lg border border-cyan-400 text-cyan-300 hover:bg-cyan-400/10 font-semibold transition">
-                        Pelajari Lebih Lanjut
                     </a>
                 </div>
             </div>
@@ -110,8 +106,8 @@
                     <div class="absolute inset-0 bg-gradient-to-r from-cyan-600/20 to-blue-600/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
                     <div class="relative bg-slate-800/50 border border-cyan-500/20 rounded-xl p-8 backdrop-blur">
                         <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-400 mb-4 flex items-center justify-center text-xl">🎯</div>
-                        <h3 class="text-xl font-bold text-cyan-300 mb-3">Tantangan Harian</h3>
-                        <p class="text-cyan-200">Ikuti tantangan coding harian untuk meningkatkan skill dan tetap konsisten dalam belajar.</p>
+                        <h3 class="text-xl font-bold text-cyan-300 mb-3">Tantangan Menarik</h3>
+                        <p class="text-cyan-200">Ikuti tantangan coding untuk meningkatkan skill dan tetap konsisten dalam belajar.</p>
                     </div>
                 </div>
 
@@ -126,73 +122,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Community Features -->
-        <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-            <div class="relative group">
-                <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-2xl blur opacity-10 group-hover:opacity-20 transition duration-500"></div>
-                <div class="relative bg-gradient-to-br from-slate-800/90 to-slate-900/90 border border-purple-500/20 rounded-2xl p-12 backdrop-blur">
-                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
-                        <span class="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-                            Kami Berbasis Komunitas
-                        </span>
-                    </h2>
-                    <p class="text-center text-purple-300 text-lg mb-8">
-                        Ada banyak fitur menarik yang tersedia khusus untuk kamu sebagai bagian dari komunitas Baricode.
-                    </p>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
-                            <div>
-                                <h3 class="text-purple-300 font-semibold mb-2">Resource Library</h3>
-                                <p class="text-purple-200/80">Akses koleksi tutorial dan resource coding dari anggota komunitas.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-8 h-8 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
-                            <div>
-                                <h3 class="text-cyan-300 font-semibold mb-2">Mentoring Program</h3>
-                                <p class="text-cyan-200/80">Dapatkan bimbingan langsung dari developer berpengalaman.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-8 h-8 rounded-full bg-pink-500 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
-                            <div>
-                                <h3 class="text-pink-300 font-semibold mb-2">Event & Meetup</h3>
-                                <p class="text-pink-200/80">Ikuti event, webinar, dan meetup offline komunitas.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-8 h-8 rounded-full bg-purple-400 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
-                            <div>
-                                <h3 class="text-purple-400 font-semibold mb-2">Job Board</h3>
-                                <p class="text-purple-300/80">Temukan peluang kerja dan project freelance dari anggota.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="border-t border-purple-500/20 backdrop-blur py-12 px-4 sm:px-6 lg:px-8">
-            <div class="max-w-7xl mx-auto">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <div class="mb-6 md:mb-0">
-                        <p class="text-purple-300 font-semibold mb-2">Baricode Community</p>
-                        <p class="text-purple-200/60">Belajar, Berkembang, dan Berbagi Bersama</p>
-                    </div>
-                    <div class="flex gap-6 text-purple-300">
-                        <a href="#" class="hover:text-purple-200 transition">Twitter</a>
-                        <a href="#" class="hover:text-purple-200 transition">Discord</a>
-                        <a href="#" class="hover:text-purple-200 transition">GitHub</a>
-                    </div>
-                </div>
-                <div class="border-t border-purple-500/20 mt-8 pt-8 text-center text-purple-200/60">
-                    <p>&copy; 2025 Baricode Community. Made with ❤️ by developers, for developers.</p>
-                </div>
-            </div>
-        </footer>
     </div>
 
     <style>
